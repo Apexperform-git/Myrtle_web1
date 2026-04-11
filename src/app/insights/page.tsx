@@ -17,7 +17,7 @@ const articles = [
       "How a leading automotive manufacturer used OmnI to cut non-value-added time in half within three months of deployment.",
     date: "March 2026",
     readTime: "5 min read",
-    color: "amber" as const,
+    color: "orange" as const,
   },
   {
     category: "Thought Leadership",
@@ -26,7 +26,7 @@ const articles = [
       "Traditional dashboards tell you what happened. Operators need to know what to do now. The shift from reporting to guidance.",
     date: "February 2026",
     readTime: "8 min read",
-    color: "electric" as const,
+    color: "plum" as const,
   },
   {
     category: "Case Studies",
@@ -35,7 +35,7 @@ const articles = [
       "A real-world case of how shift operators went from reactive decision-making to confident, guided operations.",
     date: "February 2026",
     readTime: "6 min read",
-    color: "amber" as const,
+    color: "orange" as const,
   },
   {
     category: "News",
@@ -44,7 +44,7 @@ const articles = [
       "Introducing TTS/STT-enabled guidance that lets operators interact with OmnI through natural conversation during critical moments.",
     date: "January 2026",
     readTime: "3 min read",
-    color: "emerald" as const,
+    color: "orange-light" as const,
   },
   {
     category: "Thought Leadership",
@@ -53,7 +53,7 @@ const articles = [
       "Exploring the design philosophy behind OmnI's approach: intelligence that supports, explains, and respects human judgment.",
     date: "January 2026",
     readTime: "10 min read",
-    color: "electric" as const,
+    color: "plum" as const,
   },
   {
     category: "News",
@@ -62,7 +62,7 @@ const articles = [
       "Combining traditional Brown Paper methodology with digital intelligence for comprehensive Value Stream Mapping.",
     date: "December 2025",
     readTime: "4 min read",
-    color: "emerald" as const,
+    color: "orange-light" as const,
   },
 ];
 
@@ -79,17 +79,17 @@ export default function InsightsPage() {
       {/* Hero */}
       <section className="relative pt-40 pb-20 overflow-hidden">
         <div className="absolute inset-0 dot-grid-bg opacity-20" />
-        <GlowingOrb color="electric" size="lg" className="top-20 -left-48" />
+        <GlowingOrb color="plum" size="lg" className="top-20 -left-48" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <Badge variant="electric">Insights</Badge>
+            <Badge variant="plum">Insights</Badge>
             <h1 className="mt-8 font-display text-5xl lg:text-7xl text-foreground leading-tight max-w-4xl">
               Operational Intelligence{" "}
-              <span className="text-electric italic">Insights</span>
+              <span className="text-plum-light italic">Insights</span>
             </h1>
             <p className="mt-6 text-muted text-xl max-w-2xl leading-relaxed">
               Case studies, thought leadership, and news from the world of
@@ -110,7 +110,7 @@ export default function InsightsPage() {
                 onClick={() => setActiveCategory(cat)}
                 className={`px-5 py-2.5 rounded-full text-sm font-body font-medium transition-all duration-300 ${
                   activeCategory === cat
-                    ? "bg-amber text-midnight"
+                    ? "bg-orange text-midnight"
                     : "bg-midnight border border-midnight-border text-muted hover:text-foreground hover:border-midnight-border/80"
                 }`}
               >
@@ -144,7 +144,7 @@ export default function InsightsPage() {
                         {article.readTime}
                       </span>
                     </div>
-                    <h3 className="font-display text-xl text-foreground mb-4 group-hover:text-amber transition-colors duration-300">
+                    <h3 className="font-display text-xl text-foreground mb-4 group-hover:text-orange transition-colors duration-300">
                       {article.title}
                     </h3>
                     <p className="text-muted text-sm leading-relaxed flex-1">
@@ -154,7 +154,7 @@ export default function InsightsPage() {
                       <span className="font-mono text-xs text-muted/50">
                         {article.date}
                       </span>
-                      <span className="text-amber text-sm font-body opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center gap-1">
+                      <span className="text-orange text-sm font-body opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center gap-1">
                         Read more
                         <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -180,12 +180,12 @@ export default function InsightsPage() {
       <section className="py-32">
         <div className="max-w-2xl mx-auto px-6 lg:px-8 text-center">
           <ScrollReveal>
-            <span className="font-mono text-xs tracking-[0.2em] uppercase text-amber">
+            <span className="font-mono text-xs tracking-[0.2em] uppercase text-orange">
               Newsletter
             </span>
             <h2 className="mt-6 font-display text-3xl lg:text-4xl text-foreground">
               Get Operational Intelligence{" "}
-              <span className="text-amber italic">Insights</span>
+              <span className="text-orange italic">Insights</span>
             </h2>
             <p className="mt-4 text-muted">
               Periodic updates on operational intelligence, decision-making, and
@@ -198,11 +198,11 @@ export default function InsightsPage() {
               <input
                 type="email"
                 placeholder="your@email.com"
-                className="flex-1 px-5 py-3 bg-midnight-card border border-midnight-border rounded-xl text-sm text-foreground placeholder:text-muted/40 focus:border-amber/50 focus:ring-1 focus:ring-amber/20 transition-all duration-300 outline-none"
+                className="flex-1 px-5 py-3 bg-midnight-card border border-midnight-border rounded-xl text-sm text-foreground placeholder:text-muted/40 focus:border-orange/50 focus:ring-1 focus:ring-orange/20 transition-all duration-300 outline-none"
               />
               <button
                 type="submit"
-                className="px-6 py-3 bg-amber text-midnight font-body font-semibold text-sm rounded-xl hover:bg-amber-light transition-all duration-300"
+                className="px-6 py-3 bg-orange text-midnight font-body font-semibold text-sm rounded-xl hover:bg-orange-light transition-all duration-300"
               >
                 Subscribe
               </button>

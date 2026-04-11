@@ -7,7 +7,7 @@ import GlowingOrb from "@/components/animations/GlowingOrb";
 export default function CTASection() {
   return (
     <section className="relative py-32 overflow-hidden">
-      <GlowingOrb color="amber" size="lg" className="top-0 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+      <GlowingOrb color="orange" size="lg" className="top-0 left-1/2 -translate-x-1/2 -translate-y-1/2" />
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-8 text-center">
         <motion.div
@@ -16,12 +16,12 @@ export default function CTASection() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <span className="font-mono text-xs tracking-[0.2em] uppercase text-amber">
+          <span className="font-mono text-xs tracking-[0.2em] uppercase text-orange">
             Invitation
           </span>
           <h2 className="mt-6 font-display text-4xl lg:text-6xl text-foreground leading-tight">
             Test OmnI on{" "}
-            <span className="text-amber italic">Your Reality</span>
+            <span className="text-orange italic">Your Reality</span>
           </h2>
           <p className="mt-6 text-muted text-lg max-w-xl mx-auto leading-relaxed">
             We do not believe in generic demos. OmnI proves itself only on real

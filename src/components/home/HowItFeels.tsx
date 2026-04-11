@@ -20,12 +20,12 @@ export default function HowItFeels() {
           {/* Left — editorial text */}
           <div>
             <ScrollReveal direction="left">
-              <span className="font-mono text-xs tracking-[0.2em] uppercase text-amber">
+              <span className="font-mono text-xs tracking-[0.2em] uppercase text-orange">
                 The Experience
               </span>
               <h2 className="mt-6 font-display text-4xl lg:text-5xl text-foreground leading-tight">
                 Good systems make good people{" "}
-                <span className="text-amber italic">better.</span>
+                <span className="text-orange italic">better.</span>
               </h2>
               <p className="mt-6 text-muted text-lg leading-relaxed">
                 Bad systems make good people look bad. OmnI is designed to
@@ -46,7 +46,7 @@ export default function HowItFeels() {
               <ScrollReveal key={item.text} delay={i * 0.1} direction="right">
                 <motion.div
                   whileHover={{ x: 8 }}
-                  className="flex items-center gap-5 p-5 rounded-xl border border-midnight-border/50 bg-midnight-card/50 hover:bg-midnight-card hover:border-amber/10 transition-all duration-300"
+                  className="flex items-center gap-5 p-5 rounded-xl border border-midnight-border/50 bg-midnight-card/50 hover:bg-midnight-card hover:border-orange/10 transition-all duration-300"
                 >
                   <span className="text-2xl">{item.icon}</span>
                   <span className="font-body text-lg text-foreground">

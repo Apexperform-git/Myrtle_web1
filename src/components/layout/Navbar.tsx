@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 const navItems = [
@@ -48,17 +49,21 @@ export default function Navbar() {
             {/* Logo */}
             <Link href="/" className="group flex items-center gap-3">
               <div className="relative">
-                <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-amber to-amber-dark flex items-center justify-center">
-                  <span className="font-display text-midnight text-lg font-bold">M</span>
-                </div>
-                <div className="absolute inset-0 rounded-lg bg-amber/20 blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <Image
+                  src="/images/omni-logo.png"
+                  alt="OmnI"
+                  width={40}
+                  height={40}
+                  className="rounded-full"
+                />
+                <div className="absolute inset-0 rounded-full bg-plum/20 blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
               <div className="flex flex-col">
-                <span className="font-body text-sm font-semibold tracking-wider uppercase text-foreground">
-                  Myrtle Europe
+                <span className="font-body text-sm font-bold tracking-wide text-foreground">
+                  omni
                 </span>
-                <span className="font-mono text-[10px] tracking-widest uppercase text-amber">
-                  OmnI Navigation
+                <span className="font-mono text-[9px] tracking-widest uppercase text-muted">
+                  by Myrtle Europe B.V.
                 </span>
               </div>
             </Link>
@@ -72,7 +77,7 @@ export default function Navbar() {
                   className={cn(
                     "relative px-4 py-2 text-sm font-body transition-colors duration-300",
                     pathname === item.href
-                      ? "text-amber"
+                      ? "text-orange"
                       : "text-muted hover:text-foreground"
                   )}
                 >
@@ -80,7 +85,7 @@ export default function Navbar() {
                   {pathname === item.href && (
                     <motion.div
                       layoutId="navbar-indicator"
-                      className="absolute bottom-0 left-2 right-2 h-px bg-amber"
+                      className="absolute bottom-0 left-2 right-2 h-px bg-orange"
                       transition={{ type: "spring", stiffness: 400, damping: 30 }}
                     />
                   )}
@@ -88,7 +93,7 @@ export default function Navbar() {
               ))}
               <Link
                 href="/contact"
-                className="ml-4 px-5 py-2.5 text-sm font-body font-medium bg-amber/10 text-amber border border-amber/20 rounded-full hover:bg-amber/20 hover:border-amber/40 transition-all duration-300"
+                className="ml-4 px-5 py-2.5 text-sm font-body font-medium bg-orange/10 text-orange border border-orange/20 rounded-full hover:bg-orange/20 hover:border-orange/40 transition-all duration-300"
               >
                 Contact
               </Link>
@@ -142,7 +147,7 @@ export default function Navbar() {
                     href={item.href}
                     className={cn(
                       "text-2xl font-display transition-colors duration-300",
-                      pathname === item.href ? "text-amber" : "text-muted hover:text-foreground"
+                      pathname === item.href ? "text-orange" : "text-muted hover:text-foreground"
                     )}
                   >
                     {item.label}
@@ -156,7 +161,7 @@ export default function Navbar() {
               >
                 <Link
                   href="/contact"
-                  className="mt-4 px-8 py-3 text-lg font-body font-medium bg-amber text-midnight rounded-full hover:bg-amber-light transition-all duration-300"
+                  className="mt-4 px-8 py-3 text-lg font-body font-medium bg-orange text-midnight rounded-full hover:bg-orange-light transition-all duration-300"
                 >
                   Contact
                 </Link>

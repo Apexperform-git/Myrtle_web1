@@ -14,21 +14,21 @@ const personas = [
     question: "What should I do now?",
     description:
       "Real-time decision support with clear, explainable actions during the shift.",
-    color: "amber" as const,
+    color: "orange" as const,
   },
   {
     role: "Team Leads",
     question: "What changed and why?",
     description:
       "Immediate visibility into shift dynamics and root-cause awareness.",
-    color: "electric" as const,
+    color: "plum" as const,
   },
   {
     role: "Supervisors",
     question: "What is likely to break next?",
     description:
       "Predictive foresight to prevent failures before they cascade.",
-    color: "emerald" as const,
+    color: "orange-light" as const,
   },
 ];
 
@@ -50,7 +50,7 @@ export default function WhatIsOmniPage() {
       {/* Hero */}
       <section className="relative pt-40 pb-20 overflow-hidden">
         <div className="absolute inset-0 dot-grid-bg opacity-20" />
-        <GlowingOrb color="amber" size="lg" className="top-20 -right-48" />
+        <GlowingOrb color="orange" size="lg" className="top-20 -right-48" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -62,7 +62,7 @@ export default function WhatIsOmniPage() {
               Not a dashboard.{" "}
               <br className="hidden sm:block" />
               Not automation.{" "}
-              <span className="text-amber italic">Navigation.</span>
+              <span className="text-orange italic">Navigation.</span>
             </h1>
             <p className="mt-6 text-muted text-xl max-w-2xl leading-relaxed">
               OmnI NAVIGATION is operational intelligence that guides, not
@@ -90,9 +90,9 @@ export default function WhatIsOmniPage() {
                 subtitle: "Reality 'as-is'",
                 description:
                   "Learn how the operation actually behaves. OmnI absorbs live production signals, events, patterns, and anomalies — replacing static thresholds with adaptive, real-time context.",
-                color: "text-amber",
-                bg: "bg-amber/5",
-                border: "border-amber/10",
+                color: "text-orange",
+                bg: "bg-orange/5",
+                border: "border-orange/10",
               },
               {
                 step: "02",
@@ -100,9 +100,9 @@ export default function WhatIsOmniPage() {
                 subtitle: "What may happen next",
                 description:
                   "Simulate near-future scenarios and compare possible actions. OmnI models short-term futures to provide operator foresight before events occur.",
-                color: "text-electric",
-                bg: "bg-electric/5",
-                border: "border-electric/10",
+                color: "text-plum-light",
+                bg: "bg-plum/5",
+                border: "border-plum/10",
               },
               {
                 step: "03",
@@ -110,9 +110,9 @@ export default function WhatIsOmniPage() {
                 subtitle: "What to do now",
                 description:
                   "Give clear, explainable steps with expected effect and timing. Natural speech interaction keeps operators in control while OmnI communicates, suggests, and explains.",
-                color: "text-emerald",
-                bg: "bg-emerald/5",
-                border: "border-emerald/10",
+                color: "text-orange-light",
+                bg: "bg-orange-light/5",
+                border: "border-orange-light/10",
               },
             ].map((item, i) => (
               <ScrollReveal key={item.step} delay={i * 0.15}>
@@ -162,7 +162,7 @@ export default function WhatIsOmniPage() {
               },
             ].map((item, i) => (
               <Card key={item.title} delay={i * 0.12}>
-                <h3 className="font-display text-xl text-amber mb-4">
+                <h3 className="font-display text-xl text-orange mb-4">
                   {item.title}
                 </h3>
                 <p className="text-muted leading-relaxed">{item.text}</p>
@@ -173,7 +173,7 @@ export default function WhatIsOmniPage() {
           {/* Quote */}
           <ScrollReveal>
             <blockquote className="relative max-w-3xl mx-auto text-center">
-              <div className="absolute -top-6 left-1/2 -translate-x-1/2 text-amber/20 text-8xl font-display">
+              <div className="absolute -top-6 left-1/2 -translate-x-1/2 text-orange/20 text-8xl font-display">
                 &ldquo;
               </div>
               <p className="font-display text-2xl lg:text-3xl text-foreground italic leading-relaxed">
@@ -218,7 +218,7 @@ export default function WhatIsOmniPage() {
             {/* What it IS */}
             <ScrollReveal direction="left">
               <div>
-                <span className="font-mono text-xs tracking-[0.2em] uppercase text-emerald mb-4 block">
+                <span className="font-mono text-xs tracking-[0.2em] uppercase text-orange-light mb-4 block">
                   What OmnI Is
                 </span>
                 <h3 className="font-display text-3xl text-foreground mb-8">
@@ -227,7 +227,7 @@ export default function WhatIsOmniPage() {
                 <ul className="space-y-4">
                   {isList.map((item) => (
                     <li key={item} className="flex items-start gap-3">
-                      <svg className="w-5 h-5 text-emerald mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <svg className="w-5 h-5 text-orange-light mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                       <span className="text-muted">{item}</span>
@@ -273,7 +273,7 @@ export default function WhatIsOmniPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             <ScrollReveal direction="left">
               <div>
-                <h3 className="font-display text-2xl text-amber mb-6">
+                <h3 className="font-display text-2xl text-orange mb-6">
                   Business Impact
                 </h3>
                 <ul className="space-y-4">
@@ -283,7 +283,7 @@ export default function WhatIsOmniPage() {
                     "Better learning from daily reality",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3 text-muted">
-                      <span className="w-1.5 h-1.5 rounded-full bg-amber mt-2 flex-shrink-0" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-orange mt-2 flex-shrink-0" />
                       {item}
                     </li>
                   ))}
@@ -293,7 +293,7 @@ export default function WhatIsOmniPage() {
 
             <ScrollReveal direction="right">
               <div>
-                <h3 className="font-display text-2xl text-electric mb-6">
+                <h3 className="font-display text-2xl text-plum-light mb-6">
                   People Impact
                 </h3>
                 <ul className="space-y-4">
@@ -303,7 +303,7 @@ export default function WhatIsOmniPage() {
                     "Confidence instead of guesswork",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3 text-muted">
-                      <span className="w-1.5 h-1.5 rounded-full bg-electric mt-2 flex-shrink-0" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-plum mt-2 flex-shrink-0" />
                       {item}
                     </li>
                   ))}
@@ -316,15 +316,15 @@ export default function WhatIsOmniPage() {
 
       {/* CTA */}
       <section className="relative py-32 overflow-hidden">
-        <GlowingOrb color="amber" size="lg" className="top-0 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+        <GlowingOrb color="orange" size="lg" className="top-0 left-1/2 -translate-x-1/2 -translate-y-1/2" />
         <div className="relative z-10 max-w-3xl mx-auto px-6 lg:px-8 text-center">
           <ScrollReveal>
-            <span className="font-mono text-xs tracking-[0.2em] uppercase text-amber">
+            <span className="font-mono text-xs tracking-[0.2em] uppercase text-orange">
               Invitation
             </span>
             <h2 className="mt-6 font-display text-4xl lg:text-5xl text-foreground">
               Test OmnI on{" "}
-              <span className="text-amber italic">Your Reality</span>
+              <span className="text-orange italic">Your Reality</span>
             </h2>
             <p className="mt-6 text-muted text-lg">
               Bring one real line, one real shift, one real problem. We generate

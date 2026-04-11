@@ -58,7 +58,7 @@ export default function DemoModal({ open, onClose }: DemoModalProps) {
 
               {/* Header */}
               <div className="mb-8">
-                <span className="font-mono text-xs tracking-widest uppercase text-amber">
+                <span className="font-mono text-xs tracking-widest uppercase text-orange">
                   Request Demo
                 </span>
                 <h3 className="font-display text-2xl mt-2 text-foreground">
@@ -79,7 +79,7 @@ export default function DemoModal({ open, onClose }: DemoModalProps) {
                   <input
                     type="text"
                     required
-                    className="w-full px-4 py-3 bg-midnight border border-midnight-border rounded-xl text-sm text-foreground placeholder:text-muted/40 focus:border-amber/50 focus:ring-1 focus:ring-amber/20 transition-all duration-300 outline-none"
+                    className="w-full px-4 py-3 bg-midnight border border-midnight-border rounded-xl text-sm text-foreground placeholder:text-muted/40 focus:border-orange/50 focus:ring-1 focus:ring-orange/20 transition-all duration-300 outline-none"
                     placeholder="Your name"
                   />
                 </div>
@@ -90,7 +90,7 @@ export default function DemoModal({ open, onClose }: DemoModalProps) {
                   <input
                     type="email"
                     required
-                    className="w-full px-4 py-3 bg-midnight border border-midnight-border rounded-xl text-sm text-foreground placeholder:text-muted/40 focus:border-amber/50 focus:ring-1 focus:ring-amber/20 transition-all duration-300 outline-none"
+                    className="w-full px-4 py-3 bg-midnight border border-midnight-border rounded-xl text-sm text-foreground placeholder:text-muted/40 focus:border-orange/50 focus:ring-1 focus:ring-orange/20 transition-all duration-300 outline-none"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -100,13 +100,13 @@ export default function DemoModal({ open, onClose }: DemoModalProps) {
                   </label>
                   <textarea
                     rows={3}
-                    className="w-full px-4 py-3 bg-midnight border border-midnight-border rounded-xl text-sm text-foreground placeholder:text-muted/40 focus:border-amber/50 focus:ring-1 focus:ring-amber/20 transition-all duration-300 outline-none resize-none"
+                    className="w-full px-4 py-3 bg-midnight border border-midnight-border rounded-xl text-sm text-foreground placeholder:text-muted/40 focus:border-orange/50 focus:ring-1 focus:ring-orange/20 transition-all duration-300 outline-none resize-none"
                     placeholder="Tell us about your operation..."
                   />
                 </div>
                 <button
                   type="submit"
-                  className="w-full py-3.5 bg-amber text-midnight font-body font-semibold rounded-xl hover:bg-amber-light transition-all duration-300 shadow-lg shadow-amber/10"
+                  className="w-full py-3.5 bg-orange text-midnight font-body font-semibold rounded-xl hover:bg-orange-light transition-all duration-300 shadow-lg shadow-orange/10"
                 >
                   Request Demo
                 </button>

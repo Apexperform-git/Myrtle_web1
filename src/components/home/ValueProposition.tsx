@@ -10,38 +10,38 @@ const metrics = [
     suffix: "%+",
     label: "Non-Value-Added Reduction",
     description: "Cut waste systematically through real-time operational intelligence.",
-    color: "amber" as const,
+    color: "orange" as const,
   },
   {
     value: 3,
     suffix: "×",
     label: "Faster Recovery",
     description: "Context-rich guidance accelerates recovery from disturbances.",
-    color: "electric" as const,
+    color: "plum" as const,
   },
   {
     value: 100,
     suffix: "%",
     label: "Operator Control",
     description: "OmnI never acts on its own. The operator always decides.",
-    color: "emerald" as const,
+    color: "orange-light" as const,
   },
 ];
 
 export default function ValueProposition() {
   return (
     <section className="relative py-32 overflow-hidden bg-midnight-card">
-      <GlowingOrb color="amber" size="lg" className="-top-32 right-0" />
+      <GlowingOrb color="orange" size="lg" className="-top-32 right-0" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
         <ScrollReveal>
           <div className="text-center mb-20">
-            <span className="font-mono text-xs tracking-[0.2em] uppercase text-amber">
+            <span className="font-mono text-xs tracking-[0.2em] uppercase text-orange">
               Impact
             </span>
             <h2 className="mt-4 font-display text-4xl lg:text-5xl text-foreground">
               Reduce Firefighting.{" "}
-              <span className="text-amber italic">Reveal What Matters Next.</span>
+              <span className="text-orange italic">Reveal What Matters Next.</span>
             </h2>
             <p className="mt-5 text-muted text-lg max-w-2xl mx-auto">
               Bridge AI, Operational Intelligence, OT and Human Capital — cut
@@ -53,9 +53,9 @@ export default function ValueProposition() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {metrics.map((metric, i) => {
             const colorClasses = {
-              amber: "text-amber border-amber/20 bg-amber-glow",
-              electric: "text-electric border-electric/20 bg-electric-glow",
-              emerald: "text-emerald border-emerald/20 bg-emerald-glow",
+              orange: "text-orange border-orange/20 bg-orange-glow",
+              plum: "text-plum-light border-plum/20 bg-plum-glow",
+              "orange-light": "text-orange-light border-orange-light/20 bg-orange-light-glow",
             };
 
             return (

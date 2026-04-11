@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 const productLinks = [
   { label: "What is OmnI", href: "/what-is-omni" },
@@ -22,15 +23,19 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-3 mb-6">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-amber to-amber-dark flex items-center justify-center">
-                <span className="font-display text-midnight text-lg font-bold">M</span>
-              </div>
+              <Image
+                src="/images/omni-logo.png"
+                alt="OmnI"
+                width={40}
+                height={40}
+                className="rounded-full"
+              />
               <div className="flex flex-col">
-                <span className="font-body text-sm font-semibold tracking-wider uppercase">
-                  Myrtle Europe
+                <span className="font-body text-sm font-bold tracking-wide">
+                  omni
                 </span>
-                <span className="font-mono text-[10px] tracking-widest uppercase text-amber">
-                  OmnI Navigation
+                <span className="font-mono text-[9px] tracking-widest uppercase text-muted">
+                  by Myrtle Europe B.V.
                 </span>
               </div>
             </Link>
@@ -42,7 +47,7 @@ export default function Footer() {
 
           {/* Product */}
           <div>
-            <h4 className="font-mono text-xs tracking-widest uppercase text-amber mb-6">
+            <h4 className="font-mono text-xs tracking-widest uppercase text-orange mb-6">
               Product
             </h4>
             <ul className="space-y-3">
@@ -61,7 +66,7 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h4 className="font-mono text-xs tracking-widest uppercase text-amber mb-6">
+            <h4 className="font-mono text-xs tracking-widest uppercase text-orange mb-6">
               Company
             </h4>
             <ul className="space-y-3">
@@ -93,7 +98,7 @@ export default function Footer() {
 
           {/* Newsletter */}
           <div>
-            <h4 className="font-mono text-xs tracking-widest uppercase text-amber mb-6">
+            <h4 className="font-mono text-xs tracking-widest uppercase text-orange mb-6">
               Stay Updated
             </h4>
             <p className="text-muted text-sm mb-4">
@@ -103,11 +108,11 @@ export default function Footer() {
               <input
                 type="email"
                 placeholder="your@email.com"
-                className="flex-1 px-4 py-2.5 bg-midnight-card border border-midnight-border rounded-lg text-sm text-foreground placeholder:text-muted/50 focus:border-amber/50 focus:ring-1 focus:ring-amber/20 transition-all duration-300 outline-none"
+                className="flex-1 px-4 py-2.5 bg-midnight-card border border-midnight-border rounded-lg text-sm text-foreground placeholder:text-muted/50 focus:border-orange/50 focus:ring-1 focus:ring-orange/20 transition-all duration-300 outline-none"
               />
               <button
                 type="submit"
-                className="px-4 py-2.5 bg-amber/10 text-amber border border-amber/20 rounded-lg text-sm font-medium hover:bg-amber/20 transition-all duration-300"
+                className="px-4 py-2.5 bg-orange/10 text-orange border border-orange/20 rounded-lg text-sm font-medium hover:bg-orange/20 transition-all duration-300"
               >
                 →
               </button>
@@ -124,7 +129,7 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Myrtle Europe. All rights reserved.
           </p>
           <div className="flex items-center gap-2 text-muted/30 text-xs">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald animate-pulse" />
+            <span className="w-1.5 h-1.5 rounded-full bg-orange-light animate-pulse" />
             <span>OmnI systems operational</span>
           </div>
         </div>

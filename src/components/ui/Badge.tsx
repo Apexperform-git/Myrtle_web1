@@ -2,19 +2,19 @@ import { cn } from "@/lib/utils";
 
 interface BadgeProps {
   children: React.ReactNode;
-  variant?: "amber" | "electric" | "emerald";
+  variant?: "orange" | "plum" | "orange-light";
   className?: string;
 }
 
 export default function Badge({
   children,
-  variant = "amber",
+  variant = "orange",
   className,
 }: BadgeProps) {
   const variants = {
-    amber: "bg-amber/10 text-amber border-amber/20",
-    electric: "bg-electric/10 text-electric border-electric/20",
-    emerald: "bg-emerald/10 text-emerald border-emerald/20",
+    orange: "bg-orange/10 text-orange border-orange/20",
+    plum: "bg-plum/10 text-plum-light border-plum/20",
+    "orange-light": "bg-orange-light/10 text-orange-light border-orange-light/20",
   };
 
   return (

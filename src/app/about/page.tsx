@@ -60,7 +60,7 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="relative pt-40 pb-20 overflow-hidden">
         <div className="absolute inset-0 dot-grid-bg opacity-20" />
-        <GlowingOrb color="amber" size="lg" className="top-20 -right-48" />
+        <GlowingOrb color="orange" size="lg" className="top-20 -right-48" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -70,7 +70,7 @@ export default function AboutPage() {
             <Badge>About</Badge>
             <h1 className="mt-8 font-display text-5xl lg:text-7xl text-foreground leading-tight max-w-4xl">
               We believe factories are not poorly run —{" "}
-              <span className="text-amber italic">they are poorly guided.</span>
+              <span className="text-orange italic">they are poorly guided.</span>
             </h1>
           </motion.div>
         </div>
@@ -82,12 +82,12 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <ScrollReveal direction="left">
               <div>
-                <span className="font-mono text-xs tracking-[0.2em] uppercase text-amber">
+                <span className="font-mono text-xs tracking-[0.2em] uppercase text-orange">
                   Our Story
                 </span>
                 <h2 className="mt-6 font-display text-4xl text-foreground leading-tight">
                   From operational frustration to{" "}
-                  <span className="text-amber italic">intelligent guidance</span>
+                  <span className="text-orange italic">intelligent guidance</span>
                 </h2>
                 <div className="mt-8 space-y-6 text-muted leading-relaxed">
                   <p>
@@ -116,7 +116,7 @@ export default function AboutPage() {
             {/* Timeline */}
             <ScrollReveal direction="right">
               <div className="relative pl-8">
-                <div className="absolute left-3 top-2 bottom-2 w-px bg-amber/20" />
+                <div className="absolute left-3 top-2 bottom-2 w-px bg-orange/20" />
                 {timeline.map((item, i) => (
                   <motion.div
                     key={item.label}
@@ -126,8 +126,8 @@ export default function AboutPage() {
                     transition={{ delay: 0.3 + i * 0.15 }}
                     className="relative pb-10 last:pb-0"
                   >
-                    <div className="absolute left-[-22px] top-1 w-3 h-3 rounded-full border-2 border-amber bg-midnight" />
-                    <span className="font-mono text-xs tracking-wider uppercase text-amber">
+                    <div className="absolute left-[-22px] top-1 w-3 h-3 rounded-full border-2 border-orange bg-midnight" />
+                    <span className="font-mono text-xs tracking-wider uppercase text-orange">
                       {item.label}
                     </span>
                     <p className="mt-2 text-muted leading-relaxed">
@@ -170,7 +170,7 @@ export default function AboutPage() {
       <section className="py-32 bg-midnight-card">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
           <ScrollReveal>
-            <span className="font-mono text-xs tracking-[0.2em] uppercase text-amber">
+            <span className="font-mono text-xs tracking-[0.2em] uppercase text-orange">
               Our Mission
             </span>
             <blockquote className="mt-8">
@@ -186,12 +186,12 @@ export default function AboutPage() {
 
       {/* CTA */}
       <section className="relative py-32 overflow-hidden">
-        <GlowingOrb color="amber" size="lg" className="top-0 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+        <GlowingOrb color="orange" size="lg" className="top-0 left-1/2 -translate-x-1/2 -translate-y-1/2" />
         <div className="relative z-10 max-w-3xl mx-auto px-6 lg:px-8 text-center">
           <ScrollReveal>
             <h2 className="font-display text-4xl lg:text-5xl text-foreground">
               Let&apos;s Talk{" "}
-              <span className="text-amber italic">Operations</span>
+              <span className="text-orange italic">Operations</span>
             </h2>
             <p className="mt-6 text-muted text-lg">
               We&apos;d love to hear about your operational challenges and show

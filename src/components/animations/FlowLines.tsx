@@ -36,15 +36,15 @@ export default function FlowLines({ className }: FlowLinesProps) {
       />
       <defs>
         <linearGradient id="flow-gradient" x1="0" y1="0" x2="800" y2="0" gradientUnits="userSpaceOnUse">
-          <stop offset="0" stopColor="rgba(245, 158, 11, 0)" />
-          <stop offset="0.3" stopColor="rgba(245, 158, 11, 0.5)" />
-          <stop offset="0.7" stopColor="rgba(59, 130, 246, 0.5)" />
-          <stop offset="1" stopColor="rgba(16, 185, 129, 0.5)" />
+          <stop offset="0" stopColor="rgba(232, 146, 58, 0)" />
+          <stop offset="0.3" stopColor="rgba(232, 146, 58, 0.5)" />
+          <stop offset="0.7" stopColor="rgba(123, 45, 95, 0.5)" />
+          <stop offset="1" stopColor="rgba(240, 168, 85, 0.5)" />
         </linearGradient>
         <linearGradient id="flow-gradient-2" x1="0" y1="0" x2="800" y2="0" gradientUnits="userSpaceOnUse">
-          <stop offset="0" stopColor="rgba(245, 158, 11, 0)" />
-          <stop offset="0.5" stopColor="rgba(245, 158, 11, 0.3)" />
-          <stop offset="1" stopColor="rgba(59, 130, 246, 0)" />
+          <stop offset="0" stopColor="rgba(232, 146, 58, 0)" />
+          <stop offset="0.5" stopColor="rgba(232, 146, 58, 0.3)" />
+          <stop offset="1" stopColor="rgba(123, 45, 95, 0)" />
         </linearGradient>
       </defs>
     </svg>

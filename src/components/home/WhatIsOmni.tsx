@@ -11,8 +11,8 @@ const steps = [
     title: "Understanding",
     description:
       "Learns how your operation actually behaves — signals, events, context. Reality as-is.",
-    color: "text-amber",
-    borderColor: "border-amber/20",
+    color: "text-orange",
+    borderColor: "border-orange/20",
     icon: (
       <svg className="w-8 h-8" viewBox="0 0 32 32" fill="none">
         <circle cx="16" cy="16" r="12" stroke="currentColor" strokeWidth="1.5" strokeDasharray="4 3" />
@@ -26,8 +26,8 @@ const steps = [
     title: "Reasoning",
     description:
       "Simulates near-future scenarios and compares possible actions. What may happen next.",
-    color: "text-electric",
-    borderColor: "border-electric/20",
+    color: "text-plum-light",
+    borderColor: "border-plum/20",
     icon: (
       <svg className="w-8 h-8" viewBox="0 0 32 32" fill="none">
         <path d="M8 16h16M16 8v16" stroke="currentColor" strokeWidth="1.5" />
@@ -41,8 +41,8 @@ const steps = [
     title: "Guidance",
     description:
       "Gives clear, explainable steps with expected effect and timing. What to do now.",
-    color: "text-emerald",
-    borderColor: "border-emerald/20",
+    color: "text-orange-light",
+    borderColor: "border-orange-light/20",
     icon: (
       <svg className="w-8 h-8" viewBox="0 0 32 32" fill="none">
         <path d="M16 4v24M8 12l8-8 8 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
