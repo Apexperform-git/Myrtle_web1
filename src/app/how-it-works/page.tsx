@@ -23,11 +23,11 @@ export default function HowItWorksPage() {
             transition={{ duration: 0.8 }}
           >
             <Badge variant="plum">How It Works</Badge>
-            <h1 className="mt-8 font-display text-5xl lg:text-7xl text-foreground leading-tight max-w-5xl">
-              What is <span className="text-plum-light italic">really happening</span>{" "}
+            <h1 className="mt-8 font-display text-4xl lg:text-5xl text-foreground leading-tight max-w-5xl">
+              What is <span className="text-plum-light">really happening</span>{" "}
               on the line.
             </h1>
-            <p className="mt-6 text-muted text-xl max-w-2xl leading-relaxed">
+            <p className="mt-6 text-muted text-lg max-w-2xl leading-relaxed">
               Not what should happen. Not what was planned. But what is
               happening now.
             </p>
@@ -42,9 +42,9 @@ export default function HowItWorksPage() {
             <ScrollReveal direction="left">
               <div>
                 <Badge>Reality</Badge>
-                <h2 className="mt-6 font-display text-4xl text-foreground">
+                <h2 className="mt-6 font-display text-3xl text-foreground">
                   OmnI observes what is{" "}
-                  <span className="text-orange italic">actually</span> happening
+                  <span className="text-orange">actually</span> happening
                 </h2>
                 <p className="mt-6 text-muted text-lg leading-relaxed">
                   The system monitors process flow, signals, stops, and line
@@ -122,7 +122,7 @@ export default function HowItWorksPage() {
       <section className="py-24">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
           <ScrollReveal>
-            <p className="font-mono text-xs tracking-[0.2em] uppercase text-muted mb-8">
+            <p className="font-mono text-xs tracking-widest uppercase text-muted mb-8">
               If you have ever asked
             </p>
             <div className="space-y-4">
@@ -206,9 +206,9 @@ export default function HowItWorksPage() {
             <ScrollReveal direction="right">
               <div>
                 <Badge variant="plum">Foresight</Badge>
-                <h2 className="mt-6 font-display text-4xl text-foreground">
+                <h2 className="mt-6 font-display text-3xl text-foreground">
                   Detect warning signs{" "}
-                  <span className="text-plum-light italic">before</span> they escalate
+                  <span className="text-plum-light">before</span> they escalate
                 </h2>
                 <p className="mt-6 text-muted text-lg leading-relaxed">
                   Most systems wait for failures. OmnI detects early shift
@@ -236,9 +236,9 @@ export default function HowItWorksPage() {
             <ScrollReveal direction="left">
               <div>
                 <Badge variant="orange-light">Guidance</Badge>
-                <h2 className="mt-6 font-display text-4xl text-foreground">
+                <h2 className="mt-6 font-display text-3xl text-foreground">
                   Your operational{" "}
-                  <span className="text-orange-light italic">co-pilot</span>
+                  <span className="text-orange-light">co-pilot</span>
                 </h2>
                 <p className="mt-6 text-muted text-lg leading-relaxed">
                   Voice-enabled insight through TTS/STT for a collaborative
@@ -383,7 +383,7 @@ export default function HowItWorksPage() {
         <div className="relative z-10 max-w-3xl mx-auto px-6 lg:px-8 text-center">
           <ScrollReveal>
             <h2 className="font-display text-4xl lg:text-5xl text-foreground">
-              See It in <span className="text-orange italic">Action</span>
+              See It in <span className="text-orange">Action</span>
             </h2>
             <p className="mt-6 text-muted text-lg">
               Experience how OmnI transforms your operational reality into

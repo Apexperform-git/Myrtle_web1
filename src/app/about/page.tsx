@@ -85,9 +85,9 @@ export default function AboutPage() {
             transition={{ duration: 0.8 }}
           >
             <Badge>About</Badge>
-            <h1 className="mt-8 font-display text-5xl lg:text-7xl text-foreground leading-tight max-w-4xl">
+            <h1 className="mt-8 font-display text-4xl lg:text-5xl text-foreground leading-tight max-w-4xl">
               We believe factories are not poorly run —{" "}
-              <span className="text-orange italic">they are poorly guided.</span>
+              <span className="text-orange">they are poorly guided.</span>
             </h1>
           </motion.div>
         </div>
@@ -99,12 +99,12 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <ScrollReveal direction="left">
               <div>
-                <span className="font-mono text-xs tracking-[0.2em] uppercase text-orange">
+                <span className="font-mono text-xs tracking-widest uppercase text-orange">
                   Our Story
                 </span>
-                <h2 className="mt-6 font-display text-4xl text-foreground leading-tight">
+                <h2 className="mt-6 font-display text-3xl text-foreground leading-tight">
                   From operational frustration to{" "}
-                  <span className="text-orange italic">intelligent guidance</span>
+                  <span className="text-orange">intelligent guidance</span>
                 </h2>
                 <div className="mt-8 space-y-6 text-muted leading-relaxed">
                   <p>
@@ -187,7 +187,7 @@ export default function AboutPage() {
       <section className="py-32 bg-midnight-card">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
           <ScrollReveal>
-            <span className="font-mono text-xs tracking-[0.2em] uppercase text-orange">
+            <span className="font-mono text-xs tracking-widest uppercase text-orange">
               Our Mission
             </span>
             <blockquote className="mt-8">
@@ -208,7 +208,7 @@ export default function AboutPage() {
           <ScrollReveal>
             <h2 className="font-display text-4xl lg:text-5xl text-foreground">
               Let&apos;s Talk{" "}
-              <span className="text-orange italic">Operations</span>
+              <span className="text-orange">Operations</span>
             </h2>
             <p className="mt-6 text-muted text-lg">
               We&apos;d love to hear about your operational challenges and show

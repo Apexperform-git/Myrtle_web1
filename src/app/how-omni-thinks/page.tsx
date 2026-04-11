@@ -176,11 +176,11 @@ export default function HowOmniThinksPage() {
             transition={{ duration: 0.8 }}
           >
             <Badge>Architecture</Badge>
-            <h1 className="mt-8 font-display text-5xl lg:text-7xl text-foreground leading-tight max-w-4xl">
+            <h1 className="mt-8 font-display text-4xl lg:text-5xl text-foreground leading-tight max-w-4xl">
               Stop reacting.{" "}
-              <span className="text-orange italic">Start guiding.</span>
+              <span className="text-orange">Start guiding.</span>
             </h1>
-            <p className="mt-6 text-muted text-xl max-w-2xl leading-relaxed">
+            <p className="mt-6 text-muted text-lg max-w-2xl leading-relaxed">
               Under the hood, OmnI bridges AI, operational intelligence, OT, and
               human decision-making into a unified intelligence layer.
             </p>
@@ -330,7 +330,7 @@ export default function HowOmniThinksPage() {
           <ScrollReveal>
             <h2 className="font-display text-4xl lg:text-5xl text-foreground">
               Ready to See How{" "}
-              <span className="text-orange italic">OmnI Thinks?</span>
+              <span className="text-orange">OmnI Thinks?</span>
             </h2>
             <p className="mt-6 text-muted text-lg">
               Let us show you the intelligence loop in action — on your real

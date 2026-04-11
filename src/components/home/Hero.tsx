@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background layers */}
-      <div className="absolute inset-0 dot-grid-bg opacity-30" />
+      <div className="absolute inset-0 dot-grid-bg opacity-20" />
       <ParticleField />
       <GlowingOrb color="orange" size="lg" className="top-1/4 -left-48" />
       <GlowingOrb color="plum" size="md" className="bottom-1/4 -right-32" />
@@ -23,8 +23,8 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <span className="inline-flex items-center gap-2 font-mono text-xs tracking-[0.2em] uppercase text-orange">
-              <span className="w-2 h-2 rounded-full bg-orange animate-pulse" />
+            <span className="inline-flex items-center gap-2 font-mono text-xs tracking-widest uppercase text-orange/80">
+              <span className="w-1.5 h-1.5 rounded-full bg-orange" />
               OmnI Navigation
             </span>
           </motion.div>
@@ -34,12 +34,11 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-8 font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl leading-[0.95] text-foreground"
+            className="mt-6 font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-[1] text-foreground"
           >
-            Operational Intelligence{" "}
-            <span className="text-glow-orange text-orange italic">that Guides,</span>{" "}
-            <br className="hidden sm:block" />
-            Not Reports.
+            Operational Intelligence
+            <br />
+            <span className="text-orange">that Guides,</span> Not Reports.
           </motion.h1>
 
           {/* Sub-headline */}
@@ -47,11 +46,10 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.7 }}
-            className="mt-8 text-lg sm:text-xl text-muted max-w-2xl leading-relaxed"
+            className="mt-6 text-base sm:text-lg text-muted max-w-xl leading-relaxed"
           >
             A human-centric intelligence that learns how your line behaves,
-            reasons forward, and guides decisions. Move operators from guessing
-            to estimating.
+            reasons forward, and guides decisions.
           </motion.p>
 
           {/* CTAs */}
@@ -59,7 +57,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.9 }}
-            className="mt-10 flex flex-wrap gap-4"
+            className="mt-8 flex flex-wrap gap-4"
           >
             <Button href="/contact" variant="primary" size="lg">
               Request a Demo
@@ -72,36 +70,36 @@ export default function Hero() {
             </Button>
           </motion.div>
 
-          {/* Stats ticker */}
+          {/* Stats */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 1.3 }}
-            className="mt-20 flex flex-wrap gap-12 border-t border-midnight-border/50 pt-10"
+            transition={{ duration: 1, delay: 1.2 }}
+            className="mt-16 flex flex-wrap gap-10 border-t border-midnight-border/40 pt-8"
           >
             {[
               { label: "NVA Reduction", value: "50%+" },
-              { label: "Recovery Speed", value: "3×" },
+              { label: "Recovery Speed", value: "3x" },
               { label: "Operator Control", value: "100%" },
             ].map((stat, i) => (
-              <div key={stat.label} className="flex flex-col">
-                <motion.span
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 1.5 + i * 0.15 }}
-                  className="font-display text-3xl lg:text-4xl text-orange"
-                >
+              <motion.div
+                key={stat.label}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1.4 + i * 0.1 }}
+                className="flex flex-col"
+              >
+                <span className="font-display text-2xl lg:text-3xl text-orange">
                   {stat.value}
-                </motion.span>
-                <span className="mt-1 font-mono text-xs tracking-wider uppercase text-muted">
+                </span>
+                <span className="mt-1 font-mono text-[10px] tracking-widest uppercase text-muted/70">
                   {stat.label}
                 </span>
-              </div>
+              </motion.div>
             ))}
           </motion.div>
         </div>
       </div>
-
     </section>
   );
 }

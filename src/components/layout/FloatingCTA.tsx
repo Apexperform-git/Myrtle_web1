@@ -19,18 +19,15 @@ export default function FloatingCTA() {
       <AnimatePresence>
         {visible && !modalOpen && (
           <motion.button
-            initial={{ opacity: 0, scale: 0.8, y: 20 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.8, y: 20 }}
-            transition={{ type: "spring", stiffness: 300, damping: 25 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 20 }}
+            transition={{ duration: 0.3 }}
             onClick={() => setModalOpen(true)}
-            className="fixed bottom-8 right-8 z-40 group"
+            className="fixed bottom-6 right-6 z-40 px-5 py-3 bg-orange text-midnight font-body font-semibold text-sm rounded-full shadow-lg hover:bg-orange-light transition-colors duration-200"
             aria-label="Request a demo"
           >
-            <div className="relative px-6 py-3.5 bg-orange text-midnight font-body font-semibold text-sm rounded-full shadow-lg shadow-orange/20 hover:shadow-orange/40 hover:scale-105 transition-all duration-300">
-              Request Demo
-              <div className="absolute inset-0 rounded-full bg-orange/30 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            </div>
+            Request Demo
           </motion.button>
         )}
       </AnimatePresence>
