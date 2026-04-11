@@ -4,8 +4,8 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
-import OmniLogo from "@/components/ui/OmniLogo";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -49,7 +49,13 @@ export default function Navbar() {
             {/* Logo */}
             <Link href="/" className="group flex items-center gap-3">
               <div className="relative">
-                <OmniLogo size={36} />
+                <Image
+                  src="/images/omni-logo.png"
+                  alt="OmnI"
+                  width={40}
+                  height={40}
+                  className="rounded-full"
+                />
                 <div className="absolute inset-0 rounded-full bg-plum/20 blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
               <div className="flex flex-col">
@@ -57,7 +63,7 @@ export default function Navbar() {
                   omni
                 </span>
                 <span className="font-mono text-[9px] tracking-widest uppercase text-muted">
-                  by Myrtle Europe
+                  by Myrtle Europe B.V.
                 </span>
               </div>
             </Link>

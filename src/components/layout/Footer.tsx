@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import OmniLogo from "@/components/ui/OmniLogo";
+import Image from "next/image";
 
 const productLinks = [
   { label: "What is OmnI", href: "/what-is-omni" },
@@ -23,13 +23,19 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-3 mb-6">
-              <OmniLogo size={36} />
+              <Image
+                src="/images/omni-logo.png"
+                alt="OmnI"
+                width={40}
+                height={40}
+                className="rounded-full"
+              />
               <div className="flex flex-col">
                 <span className="font-body text-sm font-bold tracking-wide">
                   omni
                 </span>
                 <span className="font-mono text-[9px] tracking-widest uppercase text-muted">
-                  by Myrtle Europe
+                  by Myrtle Europe B.V.
                 </span>
               </div>
             </Link>
