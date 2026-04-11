@@ -47,16 +47,6 @@ export default function CTASection() {
           </Button>
         </motion.div>
 
-        {/* Trust line */}
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.8 }}
-          className="mt-12 text-muted/50 text-sm font-mono tracking-wider"
-        >
-          Real operations · Real data · Real guidance
-        </motion.p>
       </div>
     </section>
   );
