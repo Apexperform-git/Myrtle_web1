@@ -40,9 +40,10 @@ export default function Navbar() {
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
           scrolled
-            ? "bg-midnight/80 backdrop-blur-xl border-b border-midnight-border/50 shadow-2xl shadow-black/20"
-            : "bg-transparent"
+            ? "backdrop-blur-xl border-b border-midnight-border/50 shadow-2xl shadow-black/20"
+            : ""
         )}
+        style={{ backgroundColor: scrolled ? "rgba(12, 10, 16, 0.85)" : "transparent" }}
       >
         <nav className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
@@ -134,7 +135,7 @@ export default function Navbar() {
             transition={{ duration: 0.3 }}
             className="fixed inset-0 z-40 bg-midnight/95 backdrop-blur-xl lg:hidden"
           >
-            <nav className="flex flex-col items-center justify-center h-full gap-8">
+            <nav className="flex flex-col items-center justify-center h-full gap-6">
               {navItems.map((item, i) => (
                 <motion.div
                   key={item.href}
@@ -146,7 +147,7 @@ export default function Navbar() {
                   <Link
                     href={item.href}
                     className={cn(
-                      "text-2xl font-display transition-colors duration-300",
+                      "text-xl font-body font-medium transition-colors duration-300",
                       pathname === item.href ? "text-orange" : "text-muted hover:text-foreground"
                     )}
                   >

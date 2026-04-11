@@ -58,13 +58,13 @@ export default function WhatIsOmniPage() {
             transition={{ duration: 0.8 }}
           >
             <Badge>What is OmnI</Badge>
-            <h1 className="mt-8 font-display text-5xl lg:text-7xl text-foreground leading-tight max-w-4xl">
+            <h1 className="mt-8 font-display text-4xl lg:text-5xl text-foreground leading-tight max-w-4xl">
               Not a dashboard.{" "}
               <br className="hidden sm:block" />
               Not automation.{" "}
-              <span className="text-orange italic">Navigation.</span>
+              <span className="text-orange">Navigation.</span>
             </h1>
-            <p className="mt-6 text-muted text-xl max-w-2xl leading-relaxed">
+            <p className="mt-6 text-muted text-lg max-w-2xl leading-relaxed">
               OmnI NAVIGATION is operational intelligence that guides, not
               reports. Seen as live guidance — voice or screen — during the
               shift.
@@ -218,10 +218,10 @@ export default function WhatIsOmniPage() {
             {/* What it IS */}
             <ScrollReveal direction="left">
               <div>
-                <span className="font-mono text-xs tracking-[0.2em] uppercase text-orange-light mb-4 block">
+                <span className="font-mono text-xs tracking-widest uppercase text-orange-light mb-4 block">
                   What OmnI Is
                 </span>
-                <h3 className="font-display text-3xl text-foreground mb-8">
+                <h3 className="font-display text-2xl text-foreground mb-6">
                   Human-centric operational intelligence
                 </h3>
                 <ul className="space-y-4">
@@ -240,10 +240,10 @@ export default function WhatIsOmniPage() {
             {/* What it's NOT */}
             <ScrollReveal direction="right">
               <div>
-                <span className="font-mono text-xs tracking-[0.2em] uppercase text-red-400 mb-4 block">
+                <span className="font-mono text-xs tracking-widest uppercase text-red-400 mb-4 block">
                   What OmnI Is Not
                 </span>
-                <h3 className="font-display text-3xl text-foreground mb-8">
+                <h3 className="font-display text-2xl text-foreground mb-6">
                   If it can&apos;t explain itself, it&apos;s noise
                 </h3>
                 <ul className="space-y-4">
@@ -319,12 +319,12 @@ export default function WhatIsOmniPage() {
         <GlowingOrb color="orange" size="lg" className="top-0 left-1/2 -translate-x-1/2 -translate-y-1/2" />
         <div className="relative z-10 max-w-3xl mx-auto px-6 lg:px-8 text-center">
           <ScrollReveal>
-            <span className="font-mono text-xs tracking-[0.2em] uppercase text-orange">
+            <span className="font-mono text-xs tracking-widest uppercase text-orange">
               Invitation
             </span>
             <h2 className="mt-6 font-display text-4xl lg:text-5xl text-foreground">
               Test OmnI on{" "}
-              <span className="text-orange italic">Your Reality</span>
+              <span className="text-orange">Your Reality</span>
             </h2>
             <p className="mt-6 text-muted text-lg">
               Bring one real line, one real shift, one real problem. We generate

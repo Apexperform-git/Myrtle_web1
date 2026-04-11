@@ -87,11 +87,11 @@ export default function InsightsPage() {
             transition={{ duration: 0.8 }}
           >
             <Badge variant="plum">Insights</Badge>
-            <h1 className="mt-8 font-display text-5xl lg:text-7xl text-foreground leading-tight max-w-4xl">
+            <h1 className="mt-8 font-display text-4xl lg:text-5xl text-foreground leading-tight max-w-4xl">
               Operational Intelligence{" "}
-              <span className="text-plum-light italic">Insights</span>
+              <span className="text-plum-light">Insights</span>
             </h1>
-            <p className="mt-6 text-muted text-xl max-w-2xl leading-relaxed">
+            <p className="mt-6 text-muted text-lg max-w-2xl leading-relaxed">
               Case studies, thought leadership, and news from the world of
               human-centric operational intelligence.
             </p>
@@ -180,12 +180,12 @@ export default function InsightsPage() {
       <section className="py-32">
         <div className="max-w-2xl mx-auto px-6 lg:px-8 text-center">
           <ScrollReveal>
-            <span className="font-mono text-xs tracking-[0.2em] uppercase text-orange">
+            <span className="font-mono text-xs tracking-widest uppercase text-orange">
               Newsletter
             </span>
             <h2 className="mt-6 font-display text-3xl lg:text-4xl text-foreground">
               Get Operational Intelligence{" "}
-              <span className="text-orange italic">Insights</span>
+              <span className="text-orange">Insights</span>
             </h2>
             <p className="mt-4 text-muted">
               Periodic updates on operational intelligence, decision-making, and

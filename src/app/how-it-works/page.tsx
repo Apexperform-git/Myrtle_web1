@@ -23,11 +23,11 @@ export default function HowItWorksPage() {
             transition={{ duration: 0.8 }}
           >
             <Badge variant="plum">How It Works</Badge>
-            <h1 className="mt-8 font-display text-5xl lg:text-7xl text-foreground leading-tight max-w-5xl">
-              What is <span className="text-plum-light italic">really happening</span>{" "}
+            <h1 className="mt-8 font-display text-4xl lg:text-5xl text-foreground leading-tight max-w-5xl">
+              What is <span className="text-plum-light">really happening</span>{" "}
               on the line.
             </h1>
-            <p className="mt-6 text-muted text-xl max-w-2xl leading-relaxed">
+            <p className="mt-6 text-muted text-lg max-w-2xl leading-relaxed">
               Not what should happen. Not what was planned. But what is
               happening now.
             </p>
@@ -42,9 +42,9 @@ export default function HowItWorksPage() {
             <ScrollReveal direction="left">
               <div>
                 <Badge>Reality</Badge>
-                <h2 className="mt-6 font-display text-4xl text-foreground">
+                <h2 className="mt-6 font-display text-3xl text-foreground">
                   OmnI observes what is{" "}
-                  <span className="text-orange italic">actually</span> happening
+                  <span className="text-orange">actually</span> happening
                 </h2>
                 <p className="mt-6 text-muted text-lg leading-relaxed">
                   The system monitors process flow, signals, stops, and line
@@ -122,7 +122,7 @@ export default function HowItWorksPage() {
       <section className="py-24">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
           <ScrollReveal>
-            <p className="font-mono text-xs tracking-[0.2em] uppercase text-muted mb-8">
+            <p className="font-mono text-xs tracking-widest uppercase text-muted mb-8">
               If you have ever asked
             </p>
             <div className="space-y-4">
@@ -206,9 +206,9 @@ export default function HowItWorksPage() {
             <ScrollReveal direction="right">
               <div>
                 <Badge variant="plum">Foresight</Badge>
-                <h2 className="mt-6 font-display text-4xl text-foreground">
+                <h2 className="mt-6 font-display text-3xl text-foreground">
                   Detect warning signs{" "}
-                  <span className="text-plum-light italic">before</span> they escalate
+                  <span className="text-plum-light">before</span> they escalate
                 </h2>
                 <p className="mt-6 text-muted text-lg leading-relaxed">
                   Most systems wait for failures. OmnI detects early shift
@@ -236,9 +236,9 @@ export default function HowItWorksPage() {
             <ScrollReveal direction="left">
               <div>
                 <Badge variant="orange-light">Guidance</Badge>
-                <h2 className="mt-6 font-display text-4xl text-foreground">
+                <h2 className="mt-6 font-display text-3xl text-foreground">
                   Your operational{" "}
-                  <span className="text-orange-light italic">co-pilot</span>
+                  <span className="text-orange-light">co-pilot</span>
                 </h2>
                 <p className="mt-6 text-muted text-lg leading-relaxed">
                   Voice-enabled insight through TTS/STT for a collaborative
@@ -326,13 +326,45 @@ export default function HowItWorksPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: "🔥", title: "Less Firefighting", description: "Clear foresight into potential issues before they become problems." },
-              { icon: "⚡", title: "Faster Recovery", description: "Context-rich suggestions that accelerate recovery from disturbances." },
-              { icon: "📉", title: "Fewer Losses", description: "Understanding operational consequences before they impact KPIs." },
-              { icon: "🤝", title: "Collaboration", description: "Natural human-machine interaction at critical decision moments." },
+              {
+                title: "Less Firefighting",
+                description: "Clear foresight into potential issues before they become problems.",
+                icon: (
+                  <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+                  </svg>
+                ),
+              },
+              {
+                title: "Faster Recovery",
+                description: "Context-rich suggestions that accelerate recovery from disturbances.",
+                icon: (
+                  <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                  </svg>
+                ),
+              },
+              {
+                title: "Fewer Losses",
+                description: "Understanding operational consequences before they impact KPIs.",
+                icon: (
+                  <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6L9 12.75l4.286-4.286a11.95 11.95 0 014.306 6.43l.776 2.898M2.25 6l3 6m-3-6h6" />
+                  </svg>
+                ),
+              },
+              {
+                title: "Collaboration",
+                description: "Natural human-machine interaction at critical decision moments.",
+                icon: (
+                  <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+                  </svg>
+                ),
+              },
             ].map((item, i) => (
               <Card key={item.title} delay={i * 0.1}>
-                <span className="text-3xl">{item.icon}</span>
+                <div className="text-orange">{item.icon}</div>
                 <h3 className="mt-4 font-body font-semibold text-foreground">
                   {item.title}
                 </h3>
@@ -351,7 +383,7 @@ export default function HowItWorksPage() {
         <div className="relative z-10 max-w-3xl mx-auto px-6 lg:px-8 text-center">
           <ScrollReveal>
             <h2 className="font-display text-4xl lg:text-5xl text-foreground">
-              See It in <span className="text-orange italic">Action</span>
+              See It in <span className="text-orange">Action</span>
             </h2>
             <p className="mt-6 text-muted text-lg">
               Experience how OmnI transforms your operational reality into

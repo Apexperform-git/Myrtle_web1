@@ -19,11 +19,11 @@ export default function ContactPage() {
             transition={{ duration: 0.8 }}
           >
             <Badge>Contact</Badge>
-            <h1 className="mt-8 font-display text-5xl lg:text-7xl text-foreground leading-tight max-w-4xl">
+            <h1 className="mt-8 font-display text-4xl lg:text-5xl text-foreground leading-tight max-w-4xl">
               Test OmnI on{" "}
-              <span className="text-orange italic">Your Reality</span>
+              <span className="text-orange">Your Reality</span>
             </h1>
-            <p className="mt-6 text-muted text-xl max-w-2xl leading-relaxed">
+            <p className="mt-6 text-muted text-lg max-w-2xl leading-relaxed">
               We don&apos;t believe in generic demos. Bring one real line, one
               real shift, one real problem.
             </p>

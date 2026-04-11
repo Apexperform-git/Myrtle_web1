@@ -128,10 +128,6 @@ export default function Footer() {
           <p className="text-muted/50 text-xs">
             &copy; {new Date().getFullYear()} Myrtle Europe. All rights reserved.
           </p>
-          <div className="flex items-center gap-2 text-muted/30 text-xs">
-            <span className="w-1.5 h-1.5 rounded-full bg-orange-light animate-pulse" />
-            <span>OmnI systems operational</span>
-          </div>
         </div>
       </div>
     </footer>

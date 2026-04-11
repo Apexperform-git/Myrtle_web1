@@ -12,10 +12,10 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         midnight: {
-          DEFAULT: "#0c0a10",
-          card: "#14101a",
-          elevated: "#1e1826",
-          border: "#2e2438",
+          DEFAULT: "rgb(12, 10, 16)",
+          card: "rgb(20, 16, 26)",
+          elevated: "rgb(30, 24, 38)",
+          border: "rgb(46, 36, 56)",
         },
         orange: {
           DEFAULT: "#E8923A",
@@ -25,7 +25,7 @@ const config: Config = {
         },
         plum: {
           DEFAULT: "#7B2D5F",
-          light: "#9B4D7F",
+          light: "#B8609A",
           dark: "#5E2048",
           glow: "rgba(123, 45, 95, 0.15)",
         },
