@@ -34,10 +34,10 @@ export default function ParticleField() {
     window.addEventListener("resize", resize);
 
     const colors = [
-      "rgba(245, 158, 11, 0.6)",
-      "rgba(59, 130, 246, 0.4)",
-      "rgba(16, 185, 129, 0.3)",
-      "rgba(245, 158, 11, 0.3)",
+      "rgba(232, 146, 58, 0.6)",
+      "rgba(123, 45, 95, 0.4)",
+      "rgba(240, 168, 85, 0.3)",
+      "rgba(232, 146, 58, 0.3)",
     ];
 
     const count = Math.min(80, Math.floor(canvas.offsetWidth / 15));
@@ -86,7 +86,7 @@ export default function ParticleField() {
             ctx.beginPath();
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(p2.x, p2.y);
-            ctx.strokeStyle = `rgba(245, 158, 11, ${0.06 * (1 - dist / 120)})`;
+            ctx.strokeStyle = `rgba(232, 146, 58, ${0.06 * (1 - dist / 120)})`;
             ctx.lineWidth = 0.5;
             ctx.stroke();
           }

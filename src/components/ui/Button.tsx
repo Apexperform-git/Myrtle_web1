@@ -25,9 +25,9 @@ export default function Button({
 
   const variants = {
     primary:
-      "bg-amber text-midnight hover:bg-amber-light shadow-lg shadow-amber/10 hover:shadow-amber/30",
+      "bg-orange text-midnight hover:bg-orange-light shadow-lg shadow-orange/10 hover:shadow-orange/30",
     secondary:
-      "bg-amber/10 text-amber border border-amber/20 hover:bg-amber/20 hover:border-amber/40",
+      "bg-orange/10 text-orange border border-orange/20 hover:bg-orange/20 hover:border-orange/40",
     ghost: "text-muted hover:text-foreground",
   };
 
@@ -44,7 +44,7 @@ export default function Button({
       <Link href={href} className={classes}>
         {children}
         {variant === "primary" && (
-          <div className="absolute inset-0 rounded-full bg-amber/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+          <div className="absolute inset-0 rounded-full bg-orange/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
         )}
       </Link>
     );
@@ -54,7 +54,7 @@ export default function Button({
     <button onClick={onClick} className={classes}>
       {children}
       {variant === "primary" && (
-        <div className="absolute inset-0 rounded-full bg-amber/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+        <div className="absolute inset-0 rounded-full bg-orange/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
       )}
     </button>
   );

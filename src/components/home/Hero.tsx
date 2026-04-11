@@ -11,8 +11,8 @@ export default function Hero() {
       {/* Background layers */}
       <div className="absolute inset-0 dot-grid-bg opacity-30" />
       <ParticleField />
-      <GlowingOrb color="amber" size="lg" className="top-1/4 -left-48" />
-      <GlowingOrb color="electric" size="md" className="bottom-1/4 -right-32" />
+      <GlowingOrb color="orange" size="lg" className="top-1/4 -left-48" />
+      <GlowingOrb color="plum" size="md" className="bottom-1/4 -right-32" />
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-32 pb-20">
@@ -23,8 +23,8 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <span className="inline-flex items-center gap-2 font-mono text-xs tracking-[0.2em] uppercase text-amber">
-              <span className="w-2 h-2 rounded-full bg-amber animate-pulse" />
+            <span className="inline-flex items-center gap-2 font-mono text-xs tracking-[0.2em] uppercase text-orange">
+              <span className="w-2 h-2 rounded-full bg-orange animate-pulse" />
               OmnI Navigation
             </span>
           </motion.div>
@@ -37,7 +37,7 @@ export default function Hero() {
             className="mt-8 font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl leading-[0.95] text-foreground"
           >
             Operational Intelligence{" "}
-            <span className="text-glow-amber text-amber italic">that Guides,</span>{" "}
+            <span className="text-glow-orange text-orange italic">that Guides,</span>{" "}
             <br className="hidden sm:block" />
             Not Reports.
           </motion.h1>
@@ -89,7 +89,7 @@ export default function Hero() {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 1.5 + i * 0.15 }}
-                  className="font-display text-3xl lg:text-4xl text-amber"
+                  className="font-display text-3xl lg:text-4xl text-orange"
                 >
                   {stat.value}
                 </motion.span>
@@ -114,7 +114,7 @@ export default function Hero() {
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
           className="w-5 h-8 rounded-full border border-midnight-border flex items-start justify-center p-1"
         >
-          <div className="w-1 h-2 rounded-full bg-amber/60" />
+          <div className="w-1 h-2 rounded-full bg-orange/60" />
         </motion.div>
       </motion.div>
     </section>

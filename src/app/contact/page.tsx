@@ -11,7 +11,7 @@ export default function ContactPage() {
       {/* Hero */}
       <section className="relative pt-40 pb-20 overflow-hidden">
         <div className="absolute inset-0 dot-grid-bg opacity-20" />
-        <GlowingOrb color="amber" size="lg" className="top-20 -right-48" />
+        <GlowingOrb color="orange" size="lg" className="top-20 -right-48" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -21,7 +21,7 @@ export default function ContactPage() {
             <Badge>Contact</Badge>
             <h1 className="mt-8 font-display text-5xl lg:text-7xl text-foreground leading-tight max-w-4xl">
               Test OmnI on{" "}
-              <span className="text-amber italic">Your Reality</span>
+              <span className="text-orange italic">Your Reality</span>
             </h1>
             <p className="mt-6 text-muted text-xl max-w-2xl leading-relaxed">
               We don&apos;t believe in generic demos. Bring one real line, one
@@ -50,7 +50,7 @@ export default function ContactPage() {
                       <input
                         type="text"
                         required
-                        className="w-full px-4 py-3 bg-midnight-card border border-midnight-border rounded-xl text-sm text-foreground placeholder:text-muted/40 focus:border-amber/50 focus:ring-1 focus:ring-amber/20 transition-all duration-300 outline-none"
+                        className="w-full px-4 py-3 bg-midnight-card border border-midnight-border rounded-xl text-sm text-foreground placeholder:text-muted/40 focus:border-orange/50 focus:ring-1 focus:ring-orange/20 transition-all duration-300 outline-none"
                         placeholder="John"
                       />
                     </div>
@@ -61,7 +61,7 @@ export default function ContactPage() {
                       <input
                         type="text"
                         required
-                        className="w-full px-4 py-3 bg-midnight-card border border-midnight-border rounded-xl text-sm text-foreground placeholder:text-muted/40 focus:border-amber/50 focus:ring-1 focus:ring-amber/20 transition-all duration-300 outline-none"
+                        className="w-full px-4 py-3 bg-midnight-card border border-midnight-border rounded-xl text-sm text-foreground placeholder:text-muted/40 focus:border-orange/50 focus:ring-1 focus:ring-orange/20 transition-all duration-300 outline-none"
                         placeholder="Doe"
                       />
                     </div>
@@ -74,7 +74,7 @@ export default function ContactPage() {
                     <input
                       type="email"
                       required
-                      className="w-full px-4 py-3 bg-midnight-card border border-midnight-border rounded-xl text-sm text-foreground placeholder:text-muted/40 focus:border-amber/50 focus:ring-1 focus:ring-amber/20 transition-all duration-300 outline-none"
+                      className="w-full px-4 py-3 bg-midnight-card border border-midnight-border rounded-xl text-sm text-foreground placeholder:text-muted/40 focus:border-orange/50 focus:ring-1 focus:ring-orange/20 transition-all duration-300 outline-none"
                       placeholder="john@company.com"
                     />
                   </div>
@@ -85,7 +85,7 @@ export default function ContactPage() {
                     </label>
                     <input
                       type="text"
-                      className="w-full px-4 py-3 bg-midnight-card border border-midnight-border rounded-xl text-sm text-foreground placeholder:text-muted/40 focus:border-amber/50 focus:ring-1 focus:ring-amber/20 transition-all duration-300 outline-none"
+                      className="w-full px-4 py-3 bg-midnight-card border border-midnight-border rounded-xl text-sm text-foreground placeholder:text-muted/40 focus:border-orange/50 focus:ring-1 focus:ring-orange/20 transition-all duration-300 outline-none"
                       placeholder="Your company"
                     />
                   </div>
@@ -96,14 +96,14 @@ export default function ContactPage() {
                     </label>
                     <textarea
                       rows={5}
-                      className="w-full px-4 py-3 bg-midnight-card border border-midnight-border rounded-xl text-sm text-foreground placeholder:text-muted/40 focus:border-amber/50 focus:ring-1 focus:ring-amber/20 transition-all duration-300 outline-none resize-none"
+                      className="w-full px-4 py-3 bg-midnight-card border border-midnight-border rounded-xl text-sm text-foreground placeholder:text-muted/40 focus:border-orange/50 focus:ring-1 focus:ring-orange/20 transition-all duration-300 outline-none resize-none"
                       placeholder="Describe your line, your shift, your challenge..."
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full py-4 bg-amber text-midnight font-body font-semibold text-base rounded-xl hover:bg-amber-light transition-all duration-300 shadow-lg shadow-amber/10 hover:shadow-amber/30"
+                    className="w-full py-4 bg-orange text-midnight font-body font-semibold text-base rounded-xl hover:bg-orange-light transition-all duration-300 shadow-lg shadow-orange/10 hover:shadow-orange/30"
                   >
                     Send Request
                   </button>
@@ -144,7 +144,7 @@ export default function ContactPage() {
                         transition={{ delay: 0.3 + i * 0.15 }}
                         className="flex gap-4"
                       >
-                        <span className="font-mono text-sm text-amber/40 mt-1 flex-shrink-0">
+                        <span className="font-mono text-sm text-orange/40 mt-1 flex-shrink-0">
                           {item.step}
                         </span>
                         <div>
@@ -162,7 +162,7 @@ export default function ContactPage() {
 
                 {/* Contact Info */}
                 <div className="p-8 rounded-2xl border border-midnight-border bg-midnight">
-                  <h4 className="font-mono text-xs tracking-widest uppercase text-amber mb-6">
+                  <h4 className="font-mono text-xs tracking-widest uppercase text-orange mb-6">
                     Direct Contact
                   </h4>
                   <div className="space-y-4">
@@ -170,7 +170,7 @@ export default function ContactPage() {
                       href="mailto:info@myrtle-europe.com"
                       className="flex items-center gap-3 text-muted hover:text-foreground transition-colors"
                     >
-                      <svg className="w-5 h-5 text-amber/60" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <svg className="w-5 h-5 text-orange/60" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                       </svg>
                       <span className="text-sm">info@myrtle-europe.com</span>
@@ -181,7 +181,7 @@ export default function ContactPage() {
                       rel="noopener noreferrer"
                       className="flex items-center gap-3 text-muted hover:text-foreground transition-colors"
                     >
-                      <svg className="w-5 h-5 text-amber/60" fill="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 text-orange/60" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                       </svg>
                       <span className="text-sm">LinkedIn</span>
@@ -191,7 +191,7 @@ export default function ContactPage() {
 
                 {/* Newsletter */}
                 <div className="p-8 rounded-2xl border border-midnight-border bg-midnight">
-                  <h4 className="font-mono text-xs tracking-widest uppercase text-amber mb-4">
+                  <h4 className="font-mono text-xs tracking-widest uppercase text-orange mb-4">
                     Stay Updated
                   </h4>
                   <p className="text-muted text-sm mb-4">
@@ -201,11 +201,11 @@ export default function ContactPage() {
                     <input
                       type="email"
                       placeholder="your@email.com"
-                      className="flex-1 px-4 py-2.5 bg-midnight-card border border-midnight-border rounded-lg text-sm text-foreground placeholder:text-muted/40 focus:border-amber/50 focus:ring-1 focus:ring-amber/20 transition-all duration-300 outline-none"
+                      className="flex-1 px-4 py-2.5 bg-midnight-card border border-midnight-border rounded-lg text-sm text-foreground placeholder:text-muted/40 focus:border-orange/50 focus:ring-1 focus:ring-orange/20 transition-all duration-300 outline-none"
                     />
                     <button
                       type="submit"
-                      className="px-4 py-2.5 bg-amber/10 text-amber border border-amber/20 rounded-lg text-sm font-medium hover:bg-amber/20 transition-all duration-300"
+                      className="px-4 py-2.5 bg-orange/10 text-orange border border-orange/20 rounded-lg text-sm font-medium hover:bg-orange/20 transition-all duration-300"
                     >
                       Subscribe
                     </button>

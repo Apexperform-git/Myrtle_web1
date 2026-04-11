@@ -31,7 +31,7 @@ export default function SectionHeading({
       )}
     >
       {tag && (
-        <span className="inline-block font-mono text-xs tracking-[0.2em] uppercase text-amber mb-4">
+        <span className="inline-block font-mono text-xs tracking-[0.2em] uppercase text-orange mb-4">
           {tag}
         </span>
       )}

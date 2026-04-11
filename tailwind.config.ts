@@ -12,30 +12,30 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         midnight: {
-          DEFAULT: "#0a0a0f",
-          card: "#111118",
-          elevated: "#1a1a24",
-          border: "#2a2a3a",
+          DEFAULT: "#0c0a10",
+          card: "#14101a",
+          elevated: "#1e1826",
+          border: "#2e2438",
         },
-        amber: {
-          DEFAULT: "#f59e0b",
-          light: "#fbbf24",
-          dark: "#d97706",
-          glow: "rgba(245, 158, 11, 0.15)",
+        orange: {
+          DEFAULT: "#E8923A",
+          light: "#F0A855",
+          dark: "#D07A28",
+          glow: "rgba(232, 146, 58, 0.15)",
         },
-        electric: {
-          DEFAULT: "#3b82f6",
-          light: "#60a5fa",
-          dark: "#2563eb",
-          glow: "rgba(59, 130, 246, 0.15)",
+        plum: {
+          DEFAULT: "#7B2D5F",
+          light: "#9B4D7F",
+          dark: "#5E2048",
+          glow: "rgba(123, 45, 95, 0.15)",
         },
-        emerald: {
-          DEFAULT: "#10b981",
-          light: "#34d399",
-          dark: "#059669",
-          glow: "rgba(16, 185, 129, 0.15)",
+        "orange-light": {
+          DEFAULT: "#F0A855",
+          light: "#F5BE7A",
+          dark: "#E8923A",
+          glow: "rgba(240, 168, 85, 0.15)",
         },
-        muted: "#94a3b8",
+        muted: "#a09aad",
       },
       fontFamily: {
         display: ['"Instrument Serif"', "Georgia", "serif"],
@@ -97,12 +97,12 @@ const config: Config = {
           "100%": { strokeDashoffset: "0" },
         },
         "glow-border": {
-          "0%, 100%": { borderColor: "rgba(245, 158, 11, 0.2)" },
-          "50%": { borderColor: "rgba(245, 158, 11, 0.6)" },
+          "0%, 100%": { borderColor: "rgba(232, 146, 58, 0.2)" },
+          "50%": { borderColor: "rgba(232, 146, 58, 0.6)" },
         },
       },
       backgroundImage: {
-        "dot-grid": "radial-gradient(circle, rgba(245, 158, 11, 0.08) 1px, transparent 1px)",
+        "dot-grid": "radial-gradient(circle, rgba(123, 45, 95, 0.08) 1px, transparent 1px)",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
       },
       backgroundSize: {

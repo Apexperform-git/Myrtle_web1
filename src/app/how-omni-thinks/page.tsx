@@ -15,7 +15,7 @@ const architecture = [
     subtitle: "Learning Reality from Live Signals",
     description:
       "Continuously absorbs production run rates, events, patterns, and anomalies. Replaces static thresholds with adaptive, real-time context that evolves with your operation.",
-    color: "amber",
+    color: "orange",
     icon: (
       <svg className="w-10 h-10" viewBox="0 0 40 40" fill="none">
         <circle cx="20" cy="20" r="16" stroke="currentColor" strokeWidth="1" strokeDasharray="3 3" />
@@ -42,7 +42,7 @@ const architecture = [
     subtitle: "Visual Reasoning and Prediction",
     description:
       "Simulates possible next steps and outcomes. Models short-term futures to provide operator foresight before events occur. Compares consequences of different actions.",
-    color: "electric",
+    color: "plum",
     icon: (
       <svg className="w-10 h-10" viewBox="0 0 40 40" fill="none">
         <path d="M8 20h24" stroke="currentColor" strokeWidth="1.5" />
@@ -60,7 +60,7 @@ const architecture = [
     subtitle: "Operator Co-Pilot",
     description:
       "Natural speech interaction (TTS/STT). Communicates directly with operators — listens, suggests, and explains while keeping humans in control of every decision.",
-    color: "emerald",
+    color: "orange-light",
     icon: (
       <svg className="w-10 h-10" viewBox="0 0 40 40" fill="none">
         <path d="M10 30c0-8 4-14 10-14s10 6 10 14" stroke="currentColor" strokeWidth="1.5" fill="none" />
@@ -76,7 +76,7 @@ const architecture = [
     subtitle: "Continuous Learning Cycle",
     description:
       "Ingest reality → Learn patterns → Simulate futures → Deliver guidance. A continuous, transparent, and auditable cycle that improves with every shift observed.",
-    color: "amber",
+    color: "orange",
     icon: (
       <svg className="w-10 h-10" viewBox="0 0 40 40" fill="none">
         <path d="M20 6a14 14 0 0 1 14 14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
@@ -124,7 +124,7 @@ function FAQItem({ question, answer, index }: { question: string; answer: string
     <ScrollReveal delay={index * 0.08}>
       <motion.div
         className="border border-midnight-border rounded-xl overflow-hidden"
-        animate={{ borderColor: isOpen ? "rgba(245, 158, 11, 0.2)" : "rgba(42, 42, 58, 1)" }}
+        animate={{ borderColor: isOpen ? "rgba(232, 146, 58, 0.2)" : "rgba(46, 36, 56, 1)" }}
       >
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -134,7 +134,7 @@ function FAQItem({ question, answer, index }: { question: string; answer: string
           <motion.svg
             animate={{ rotate: isOpen ? 45 : 0 }}
             transition={{ duration: 0.3 }}
-            className="w-5 h-5 text-amber flex-shrink-0"
+            className="w-5 h-5 text-orange flex-shrink-0"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -167,8 +167,8 @@ export default function HowOmniThinksPage() {
       {/* Hero */}
       <section className="relative pt-40 pb-20 overflow-hidden">
         <div className="absolute inset-0 dot-grid-bg opacity-20" />
-        <GlowingOrb color="amber" size="lg" className="top-20 -right-48" />
-        <GlowingOrb color="electric" size="md" className="bottom-0 -left-32" />
+        <GlowingOrb color="orange" size="lg" className="top-20 -right-48" />
+        <GlowingOrb color="plum" size="md" className="bottom-0 -left-32" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -178,7 +178,7 @@ export default function HowOmniThinksPage() {
             <Badge>Architecture</Badge>
             <h1 className="mt-8 font-display text-5xl lg:text-7xl text-foreground leading-tight max-w-4xl">
               Stop reacting.{" "}
-              <span className="text-amber italic">Start guiding.</span>
+              <span className="text-orange italic">Start guiding.</span>
             </h1>
             <p className="mt-6 text-muted text-xl max-w-2xl leading-relaxed">
               Under the hood, OmnI bridges AI, operational intelligence, OT, and
@@ -200,9 +200,9 @@ export default function HowOmniThinksPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {architecture.map((layer, i) => {
               const colorMap: Record<string, string> = {
-                amber: "text-amber border-amber/20 hover:border-amber/40",
-                electric: "text-electric border-electric/20 hover:border-electric/40",
-                emerald: "text-emerald border-emerald/20 hover:border-emerald/40",
+                orange: "text-orange border-orange/20 hover:border-orange/40",
+                plum: "text-plum-light border-plum/20 hover:border-plum/40",
+                "orange-light": "text-orange-light border-orange-light/20 hover:border-orange-light/40",
               };
               return (
                 <ScrollReveal key={layer.id} delay={i * 0.12}>
@@ -246,8 +246,8 @@ export default function HowOmniThinksPage() {
           <div className="relative w-80 h-80 mx-auto mt-16">
             {/* Center */}
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-20 h-20 rounded-full bg-amber/5 border border-amber/20 flex items-center justify-center">
-                <span className="font-mono text-xs text-amber tracking-wider">OmnI</span>
+              <div className="w-20 h-20 rounded-full bg-orange/5 border border-orange/20 flex items-center justify-center">
+                <span className="font-mono text-xs text-orange tracking-wider">OmnI</span>
               </div>
             </div>
 
@@ -258,24 +258,24 @@ export default function HowOmniThinksPage() {
               className="absolute inset-0"
             >
               <svg className="w-full h-full" viewBox="0 0 320 320">
-                <circle cx="160" cy="160" r="140" fill="none" stroke="rgba(245, 158, 11, 0.1)" strokeWidth="1" strokeDasharray="4 8" />
+                <circle cx="160" cy="160" r="140" fill="none" stroke="rgba(232, 146, 58, 0.1)" strokeWidth="1" strokeDasharray="4 8" />
               </svg>
             </motion.div>
 
             {/* Loop steps */}
             {[
-              { label: "Ingest Reality", angle: -90, color: "amber" },
-              { label: "Learn Patterns", angle: 0, color: "electric" },
-              { label: "Simulate Futures", angle: 90, color: "emerald" },
-              { label: "Guide Decisions", angle: 180, color: "amber" },
+              { label: "Ingest Reality", angle: -90, color: "orange" },
+              { label: "Learn Patterns", angle: 0, color: "plum" },
+              { label: "Simulate Futures", angle: 90, color: "orange-light" },
+              { label: "Guide Decisions", angle: 180, color: "orange" },
             ].map((step, i) => {
               const rad = (step.angle * Math.PI) / 180;
               const x = 160 + Math.cos(rad) * 130;
               const y = 160 + Math.sin(rad) * 130;
               const colorClasses: Record<string, string> = {
-                amber: "bg-amber/10 border-amber/30 text-amber",
-                electric: "bg-electric/10 border-electric/30 text-electric",
-                emerald: "bg-emerald/10 border-emerald/30 text-emerald",
+                orange: "bg-orange/10 border-orange/30 text-orange",
+                plum: "bg-plum/10 border-plum/30 text-plum-light",
+                "orange-light": "bg-orange-light/10 border-orange-light/30 text-orange-light",
               };
               return (
                 <motion.div
@@ -325,12 +325,12 @@ export default function HowOmniThinksPage() {
 
       {/* CTA */}
       <section className="relative py-32 overflow-hidden">
-        <GlowingOrb color="amber" size="lg" className="top-0 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+        <GlowingOrb color="orange" size="lg" className="top-0 left-1/2 -translate-x-1/2 -translate-y-1/2" />
         <div className="relative z-10 max-w-3xl mx-auto px-6 lg:px-8 text-center">
           <ScrollReveal>
             <h2 className="font-display text-4xl lg:text-5xl text-foreground">
               Ready to See How{" "}
-              <span className="text-amber italic">OmnI Thinks?</span>
+              <span className="text-orange italic">OmnI Thinks?</span>
             </h2>
             <p className="mt-6 text-muted text-lg">
               Let us show you the intelligence loop in action — on your real

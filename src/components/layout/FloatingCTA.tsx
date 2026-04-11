@@ -27,9 +27,9 @@ export default function FloatingCTA() {
             className="fixed bottom-8 right-8 z-40 group"
             aria-label="Request a demo"
           >
-            <div className="relative px-6 py-3.5 bg-amber text-midnight font-body font-semibold text-sm rounded-full shadow-lg shadow-amber/20 hover:shadow-amber/40 hover:scale-105 transition-all duration-300">
+            <div className="relative px-6 py-3.5 bg-orange text-midnight font-body font-semibold text-sm rounded-full shadow-lg shadow-orange/20 hover:shadow-orange/40 hover:scale-105 transition-all duration-300">
               Request Demo
-              <div className="absolute inset-0 rounded-full bg-amber/30 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute inset-0 rounded-full bg-orange/30 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </div>
           </motion.button>
         )}

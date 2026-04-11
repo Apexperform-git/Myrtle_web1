@@ -3,20 +3,20 @@
 import { cn } from "@/lib/utils";
 
 interface GlowingOrbProps {
-  color?: "amber" | "electric" | "emerald";
+  color?: "orange" | "plum" | "orange-light";
   size?: "sm" | "md" | "lg";
   className?: string;
 }
 
 export default function GlowingOrb({
-  color = "amber",
+  color = "orange",
   size = "md",
   className,
 }: GlowingOrbProps) {
   const colors = {
-    amber: "bg-amber/20",
-    electric: "bg-electric/20",
-    emerald: "bg-emerald/20",
+    orange: "bg-orange/20",
+    plum: "bg-plum/20",
+    "orange-light": "bg-orange-light/20",
   };
 
   const sizes = {

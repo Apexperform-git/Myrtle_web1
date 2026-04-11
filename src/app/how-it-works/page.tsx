@@ -15,16 +15,16 @@ export default function HowItWorksPage() {
       {/* Hero */}
       <section className="relative pt-40 pb-20 overflow-hidden">
         <div className="absolute inset-0 dot-grid-bg opacity-20" />
-        <GlowingOrb color="electric" size="lg" className="top-20 -left-48" />
+        <GlowingOrb color="plum" size="lg" className="top-20 -left-48" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <Badge variant="electric">How It Works</Badge>
+            <Badge variant="plum">How It Works</Badge>
             <h1 className="mt-8 font-display text-5xl lg:text-7xl text-foreground leading-tight max-w-5xl">
-              What is <span className="text-electric italic">really happening</span>{" "}
+              What is <span className="text-plum-light italic">really happening</span>{" "}
               on the line.
             </h1>
             <p className="mt-6 text-muted text-xl max-w-2xl leading-relaxed">
@@ -44,7 +44,7 @@ export default function HowItWorksPage() {
                 <Badge>Reality</Badge>
                 <h2 className="mt-6 font-display text-4xl text-foreground">
                   OmnI observes what is{" "}
-                  <span className="text-amber italic">actually</span> happening
+                  <span className="text-orange italic">actually</span> happening
                 </h2>
                 <p className="mt-6 text-muted text-lg leading-relaxed">
                   The system monitors process flow, signals, stops, and line
@@ -65,7 +65,7 @@ export default function HowItWorksPage() {
                       transition={{ delay: 0.3 + i * 0.1 }}
                       className="flex items-center gap-3 text-muted"
                     >
-                      <div className="w-6 h-px bg-amber/60" />
+                      <div className="w-6 h-px bg-orange/60" />
                       {item}
                     </motion.li>
                   ))}
@@ -82,7 +82,7 @@ export default function HowItWorksPage() {
             <ScrollReveal direction="right">
               <div className="relative p-8 rounded-2xl border border-midnight-border bg-midnight overflow-hidden">
                 <div className="font-mono text-xs text-muted/50 mb-4 flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-emerald animate-pulse" />
+                  <span className="w-2 h-2 rounded-full bg-orange-light animate-pulse" />
                   LIVE SIGNALS
                 </div>
                 {/* Fake signal bars */}
@@ -98,9 +98,9 @@ export default function HowItWorksPage() {
                       height: `${h * 120}px`,
                       background:
                         h > 0.8
-                          ? "rgba(16, 185, 129, 0.4)"
+                          ? "rgba(240, 168, 85, 0.4)"
                           : h > 0.5
-                          ? "rgba(245, 158, 11, 0.4)"
+                          ? "rgba(232, 146, 58, 0.4)"
                           : "rgba(239, 68, 68, 0.4)",
                     }}
                   />
@@ -148,7 +148,7 @@ export default function HowItWorksPage() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.8 }}
-              className="mt-8 text-amber font-body text-lg"
+              className="mt-8 text-orange font-body text-lg"
             >
               Then OmnI was built for you.
             </motion.p>
@@ -164,7 +164,7 @@ export default function HowItWorksPage() {
             <ScrollReveal direction="left">
               <div className="relative p-8 rounded-2xl border border-midnight-border bg-midnight">
                 <div className="font-mono text-xs text-muted/50 mb-6 flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-amber animate-pulse" />
+                  <span className="w-2 h-2 rounded-full bg-orange animate-pulse" />
                   FORESIGHT ENGINE
                 </div>
 
@@ -173,10 +173,10 @@ export default function HowItWorksPage() {
                   <div className="absolute left-4 top-0 bottom-0 w-px bg-midnight-border" />
 
                   {[
-                    { time: "08:15", event: "Minor delay detected", status: "warning", color: "amber" },
-                    { time: "08:22", event: "Pattern matches pre-stop sequence", status: "alert", color: "amber" },
-                    { time: "08:25", event: "Suggested: Reduce speed 5%", status: "guidance", color: "emerald" },
-                    { time: "08:30", event: "40-min recovery stop prevented", status: "success", color: "emerald" },
+                    { time: "08:15", event: "Minor delay detected", status: "warning", color: "orange" },
+                    { time: "08:22", event: "Pattern matches pre-stop sequence", status: "alert", color: "orange" },
+                    { time: "08:25", event: "Suggested: Reduce speed 5%", status: "guidance", color: "orange-light" },
+                    { time: "08:30", event: "40-min recovery stop prevented", status: "success", color: "orange-light" },
                   ].map((item, i) => (
                     <motion.div
                       key={item.time}
@@ -187,13 +187,13 @@ export default function HowItWorksPage() {
                       className="relative pl-10 pb-6 last:pb-0"
                     >
                       <div className={`absolute left-2.5 top-1 w-3 h-3 rounded-full border-2 ${
-                        item.color === "emerald"
-                          ? "border-emerald bg-emerald/20"
-                          : "border-amber bg-amber/20"
+                        item.color === "orange-light"
+                          ? "border-orange-light bg-orange-light/20"
+                          : "border-orange bg-orange/20"
                       }`} />
                       <span className="font-mono text-xs text-muted/50">{item.time}</span>
                       <p className={`text-sm mt-1 ${
-                        item.color === "emerald" ? "text-emerald" : "text-amber"
+                        item.color === "orange-light" ? "text-orange-light" : "text-orange"
                       }`}>
                         {item.event}
                       </p>
@@ -205,16 +205,16 @@ export default function HowItWorksPage() {
 
             <ScrollReveal direction="right">
               <div>
-                <Badge variant="electric">Foresight</Badge>
+                <Badge variant="plum">Foresight</Badge>
                 <h2 className="mt-6 font-display text-4xl text-foreground">
                   Detect warning signs{" "}
-                  <span className="text-electric italic">before</span> they escalate
+                  <span className="text-plum-light italic">before</span> they escalate
                 </h2>
                 <p className="mt-6 text-muted text-lg leading-relaxed">
                   Most systems wait for failures. OmnI detects early shift
                   patterns before stops occur, suggesting preventive adjustments.
                 </p>
-                <blockquote className="mt-8 pl-6 border-l-2 border-amber/30">
+                <blockquote className="mt-8 pl-6 border-l-2 border-orange/30">
                   <p className="text-foreground italic font-display text-lg">
                     &ldquo;One small slowdown prevented a 40-minute recovery stop.&rdquo;
                   </p>
@@ -235,10 +235,10 @@ export default function HowItWorksPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <ScrollReveal direction="left">
               <div>
-                <Badge variant="emerald">Guidance</Badge>
+                <Badge variant="orange-light">Guidance</Badge>
                 <h2 className="mt-6 font-display text-4xl text-foreground">
                   Your operational{" "}
-                  <span className="text-emerald italic">co-pilot</span>
+                  <span className="text-orange-light italic">co-pilot</span>
                 </h2>
                 <p className="mt-6 text-muted text-lg leading-relaxed">
                   Voice-enabled insight through TTS/STT for a collaborative
@@ -260,7 +260,7 @@ export default function HowItWorksPage() {
                       transition={{ delay: 0.2 + i * 0.1 }}
                       className="flex items-start gap-3"
                     >
-                      <svg className="w-5 h-5 text-emerald mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <svg className="w-5 h-5 text-orange-light mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                       <span className="text-muted">{item}</span>
@@ -274,7 +274,7 @@ export default function HowItWorksPage() {
             <ScrollReveal direction="right">
               <div className="relative p-8 rounded-2xl border border-midnight-border bg-midnight overflow-hidden">
                 <div className="font-mono text-xs text-muted/50 mb-6 flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-emerald animate-pulse" />
+                  <span className="w-2 h-2 rounded-full bg-orange-light animate-pulse" />
                   CO-PILOT ACTIVE
                 </div>
 
@@ -295,7 +295,7 @@ export default function HowItWorksPage() {
                           repeatType: "reverse",
                           repeatDelay: Math.random() * 2,
                         }}
-                        className="w-1.5 rounded-full bg-emerald/40"
+                        className="w-1.5 rounded-full bg-orange-light/40"
                         style={{ height: `${h}%` }}
                       />
                     );
@@ -303,7 +303,7 @@ export default function HowItWorksPage() {
                 </div>
 
                 <div className="mt-6 p-4 rounded-xl bg-midnight-card/50 border border-midnight-border/50">
-                  <p className="text-sm text-emerald font-mono">
+                  <p className="text-sm text-orange-light font-mono">
                     &ldquo;Line 3 showing early pattern similar to yesterday&apos;s
                     08:45 slowdown. Suggest reducing feed rate by 5% for the
                     next 10 minutes.&rdquo;
@@ -347,11 +347,11 @@ export default function HowItWorksPage() {
 
       {/* CTA */}
       <section className="relative py-32 overflow-hidden">
-        <GlowingOrb color="amber" size="lg" className="top-0 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+        <GlowingOrb color="orange" size="lg" className="top-0 left-1/2 -translate-x-1/2 -translate-y-1/2" />
         <div className="relative z-10 max-w-3xl mx-auto px-6 lg:px-8 text-center">
           <ScrollReveal>
             <h2 className="font-display text-4xl lg:text-5xl text-foreground">
-              See It in <span className="text-amber italic">Action</span>
+              See It in <span className="text-orange italic">Action</span>
             </h2>
             <p className="mt-6 text-muted text-lg">
               Experience how OmnI transforms your operational reality into
